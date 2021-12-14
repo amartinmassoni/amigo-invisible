@@ -16,7 +16,8 @@ def emparejar_lista( lista ):
     raise ValueError
 
 def leer_lista( nombrefichero ):
-    return [ linea.strip().split( '\t', 2 ) for linea in open( nombrefichero, 'r' ) ]
+    return [ [ item for item in linea.strip().split( '\t' ) if item ]
+             for linea in open( nombrefichero, 'r' ) ]
 
 if __name__ == '__main__':
     import argparse
