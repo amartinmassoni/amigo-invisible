@@ -11,6 +11,7 @@ def emparejar_lista( lista ):
         random.shuffle( reciben )
         resultado = list( zip( compran, reciben ) )
         if not [ ( r1, r2 ) for ( r1, r2 ) in resultado if r1 == r2 ]:
+            resultado.sort()
             return resultado
     raise ValueError
 
@@ -24,6 +25,8 @@ if __name__ == '__main__':
     parser.add_argument( 'lista' )
     args = parser.parse_args()
 
-    receptores = leer_lista( args.lista )
-
+    personas = leer_lista( args.lista )
+    resultado = emparejar_lista( personas )
+    for ( regalan, reciben ) in resultado:
+        print( regalan[ 0 ], "regalan a", reciben[ 0 ] )
 
