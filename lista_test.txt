@@ -1,3 +1,5 @@
 John y Jane	johnjane@hotmail.com
 Jim y Pam	jimpam@gmail.com
 Dad y Mom	dadmom@hotmail.com
+Michael y Dwight	myd@hotmail.com
+Clint y Kate	cyk@hotmail.com
