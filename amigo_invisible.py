@@ -36,8 +36,7 @@ if __name__ == '__main__':
                         help='Configuracion de email (email_test.txt)')
     args = parser.parse_args()
 
-    if args.envio:
-        conf_email = leer_conf_email(args.envio)
+    conf_email = args.envio and leer_conf_email(args.envio) or {}
     personas = leer_lista(args.lista)
     resultado = emparejar_lista(personas)
     for (regalan, reciben) in resultado:
