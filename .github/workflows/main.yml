@@ -31,5 +31,5 @@ jobs:
           pip install pytest flake8
           flake8
           pytest
-          python3 amigo_invisible.py lista_test.txt
+          python3 amigo_invisible.py lista_test.txt --envio email_test.txt
 
