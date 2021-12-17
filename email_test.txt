@@ -1,0 +1,8 @@
+de=amigo.invisible@example.com
+cc=
+cco=
+asunto=Sorteo amigo invisible
+cuerpo=f"Hola {regalan[0]}, en el sorteo del amigo invisible te toca regalar a {reciben[0]}"
+servidor=smtp.example.com.no.va.a.funcionar
+usuario=usuario_de_smtp
+password=12345=678
